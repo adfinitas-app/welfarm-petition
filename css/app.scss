@@ -48,6 +48,14 @@ input[type='checkbox'] {
   &:checked + label span {
     background:url("/img/checkbox.png") -30px top no-repeat;
   }
+  &.checkbox-black {
+    + label span {
+      background:url("/img/checkbox-black.png") left top no-repeat;
+    }
+    &:checked + label span {
+      background:url("/img/checkbox-black.png") -30px top no-repeat;
+    }
+  }
 }
 .share {
   p {
