@@ -1,0 +1,43 @@
+$black: #000000;
+$white: #ffffff;
+$grey: #404040;
+$orange: #f19402;
+$green: #97bf0d;
+$brown: #3c3734;
+$frank: 'Young-Frankenstein-Rotalic';
+$helvetica: "nimbus-sans", sans-serif;
+
+@font-face {
+  font-family: 'Young-Frankenstein-Rotalic';
+  src:url('/font/Young-Frankenstein-Rotalic.ttf.woff') format('woff'),
+  url('/font/Young-Frankenstein-Rotalic.ttf.svg#Young-Frankenstein-Rotalic') format('svg'),
+  url('/font/Young-Frankenstein-Rotalic.ttf.eot'),
+  url('/font/Young-Frankenstein-Rotalic.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: bold;
+}
+.green-color {
+  color: $green;
+}
+.orange-color {
+  color: $orange;
+}
