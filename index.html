@@ -70,6 +70,7 @@ layout: default
 	<img src="/img/grey-eleveur.png" alt="Eleveur">
       </div>
       <div class="medium-6 columns part-3">
+	<p class="cet-acte">Cet acte est :</p>
 	<p class="orange-color uppercase bold">Extrêmement douloureux pour l’animal</p>
 	<p>Néfaste pour l’environnement </p>
 	<p>Un non-sens économique</p>
@@ -138,8 +139,8 @@ layout: default
 	<a href="TODO" class="button">En élevage</a>
 	<img src="/img/green-2.png" alt="">
 	<p>
-	Un « vaccin anti-odeur » est administré aux porcelets mâles afin d’inhiber la production des hormones responsables de l’odeur désagréable.<br />
-	Cette alternative est sans risque pour le consommateur. En effet L’ANSES (Agence nationale de sécurité sanitaire de l’alimentation, de l’environnement et du travail), tout comme son homologue européen l’EFSA ont autorisé sa mise sur le marché depuis 2009 et ont certifié qu’on ne retrouvait aucun résidu dans la viande de porc.
+	Un « vaccin anti-odeur » est administré aux porcelets mâles afin d’inhiber la production des molécules responsables de l’odeur désagréable.<br />
+	L’ANSES (Agence nationale de sécurité sanitaire de l’alimentation, de l’environnement et du travail), tout comme son homologue européen l’EFSA ont autorisé sa mise sur le marché depuis 2009 et ont certifié qu’on ne retrouvait aucun résidu dans la viande de porc.
 	</p>
       </div>
     </div>
@@ -199,7 +200,8 @@ layout: default
     </div>
     <div class="large-8 columns end">
       <h2>Je signe la pétition</h2>
-      <h3>Déjà 13027 signatures</h3>
+      <h4>pour demander l’arrêt de la castration à vif des porcelets</h4>
+      <h3>Déjà <span id="nb-signatures">0</span> signatures</h3>
     </div>
   </div>
   <div class="row texte">
@@ -214,17 +216,21 @@ layout: default
     <form class="petitionForm" novalidate>
       <div class="row">
 	<div class="large-10 columns large-centered">
-	  <div class="medium-4 columns">
+	  <div class="medium-3 columns">
 	    <input type="text" placeholder="Nom" name="name" required />
 	    <p class="show-error">Le nom n'est pas valide</p>
 	  </div>
-	  <div class="medium-4 columns">
+	  <div class="medium-3 columns">
 	    <input type="text" placeholder="Prénom" name="firstname" required />
 	    <p class="show-error">Le prénom n'est pas valide</p>
 	  </div>
-	  <div class="medium-4 columns">
+	  <div class="medium-3 columns">
 	    <input type="email" placeholder="Email" name="email" required />
 	    <p class="show-error">L'email n'est pas valide</p>
+	  </div>
+	  <div class="medium-3 columns">
+	    <input id="id_phone" type="text" placeholder="Téléphone" name="phone" required />
+	    <p class="show-error">Le numéro de téléphone n'est pas valide</p>
 	  </div>
 	</div>
       </div>
@@ -284,108 +290,97 @@ layout: default
 	<div class="number">2</div>
       </div>
       <div class="large-8 columns end">
-	<h2>faites bouger les acteurs<br /> qui refusent le changement</h2>
+	<h2>faites bouger les acteurs<br /> reticents</h2>
       </div>
     </div>
     <div class="row">
       <div class="large-12 columns">
 	<p class="text-1">
-	Dans le cadre de sa campagne #couic2018, WELFARM a interpellé les professionnels de l’ensemble de la filière porcine.<br />
-	Une démarche de dialogue a été entamée avec certains d’entre eux.
+	Dans le cadre de sa campagne #couic2018, nous avons interpellé les professionnels de l’ensemble de la filière porcine, de l'agro-alimentaire et de la distribution. Une démarche de dialogue a été entamée avec certains d’entre eux.
 	</p>
 	<p class="text-2">
 	Cependant, plusieurs entreprises n’ont pas répondu à nos demandes de rendez-vous.
 	</p>
-	<p class="ecrivez">Ecrivez-leur pour les faire changer d’avis en cliquant sur leur nom :</p>
+	<p class="ecrivez">Ecrivez-leur pour les inciter a entamer un dialogue avec welfarm :</p>
       </div>
     </div>
   </div>
   <div class="part-2">
     <div class="row">
-      <div class="large-12 columns">
-	<div class="medium-3 columns">
-	  <a class="button marque" href="TODO">Herta</a>
+      <div class="large-10 columns large-centered">
+	<div class="number-petition">1</div>
+	<p class="legende-number-petition">Copier/Coller le texte suivant :</p>
+	<div class="letter">
+	  <p class="objet">Objet : Approvisionnement de votre enseigne en viande provenant de porcs non castré à vif</p>
+	  <p>Madame/Monsieur</p>
+	  <p>C’est avec effroi que j’ai appris que votre enseigne commercialisait du porc castré sans anesthésie. Cette mutilation est réalisée au scalpel sur des animaux âgés de moins d’une semaine, et engendre une souffrance très importante qui perdure plusieurs jours après l’opération.</p>
+	  <p>Or, des alternatives prenant en compte le bien-être de l’animal existent ; certains distributeurs français et européens se sont déjà engagés dans cette voie en faisant le choix de se fournir auprès d’éleveurs de mâles non castrés ou immunocastrés.</p>
+	  <p>C’est la raison pour laquelle je vous demande aujourd’hui de vous engager pour l’arrêt de la castration à vif des porcelets en vous approvisionnant chez des éleveurs n’ayant pas recours à cette mutilation</p>
+	  <p>L’association WELFARM Protection mondiale des animaux de ferme peut vous aider dans cette démarche.</p>
+	  <p>En espérant vous voir réagir au plus vite pour mettre fin à cette pratique, je vous serai gré, Madame, Monsieur, de bien vouloir m’apporter une réponse.</p>
 	</div>
-	<div class="medium-3 columns">
-	  <a class="button marque" href="TODO">Bordeau Chesnel</a>
+      </div>
+    </div>
+  </div>
+  <div class="part-3">
+    <div class="row medium-collapse">
+      <div class="large-8 columns large-centered small-collapse">
+	<div class="small-1 columns">
+	  <div class="number-petition">2</div>
 	</div>
-	<div class="medium-3 columns">
-	  <a class="button marque" href="TODO">Super U</a>
+	<div class="small-11 columns">
+	  <p class="legende-number-petition">
+	  Choisissez le nom de l’enseigne en cliquant sur son bouton<br />
+	  <span class="italic nobold">(ceci ouvrira la page du formulaire de contact du site Internet de l’enseigne. Vous pourrez alors y copier/coller le message) :</span>
+	  </p>
 	</div>
-	<div class="medium-3 columns">
-	  <a class="button marque" href="TODO">Leclerc</a>
-	</div>
-	<!--<div class="button-group equal-size">-->
-	  <!--<a class="button marque" href="TODO">Herta</a>-->
-	  <!--<a class="button marque" href="TODO">Bordeau Chesnel</a>-->
-	  <!--<a class="button marque" href="TODO">Super U</a>-->
-	  <!--<a class="button marque" href="TODO">Leclerc</a>-->
-	<!--</div>-->
       </div>
     </div>
     <div class="row">
       <div class="large-10 columns large-centered">
 	<div class="medium-4 columns">
-	  <a class="button marque" href="TODO">Autre</a>
+	  <a class="button marque" target="_blank" href="https://contact.croquonslavie.fr">Herta</a>
 	</div>
 	<div class="medium-4 columns">
-	  <a class="button marque" href="TODO">Autre</a>
+	  <a class="button marque" target="_blank" href="https://www.bordeau-chesnel.com/contact.html">Bordeau Chesnel</a>
 	</div>
 	<div class="medium-4 columns">
-	  <a class="button marque" href="TODO">Autre</a>
+	  <a class="button marque" target="_blank" href="https://www.magasins-u.com/contact">Super U</a>
 	</div>
       </div>
     </div>
-    <div class="part-3">
-      <div class="row">
-	<div class="large-10 columns large-centered">
-	  <div class="letter">
-	    <p class="destinataire">À : adresse email</p>
-	    <p class="objet">Objet : Approvisionnement de votre enseigne en viande provenant de porcs non castré à vif</p>
-	    <p class="contenu">
-	    Madame/Monsieur le directeur,<br />
-	    C’est avec effroi que j’ai appris que votre enseigne commercialisait du porc castré sans anesthésie. Cette mutilation est réalisée au scalpel sur des animaux âgés de moins d’une semaine, et engendre une souffrance très importante qui perdure plusieurs jours après l’opération.<br />
-	    Or, des alternatives prenant en compte le bien-être de l’animal existent ; certains distributeurs français et européens se sont déjà engagés dans cette voie en faisant le choix de se fournir auprès d’éleveurs de mâles non castrés ou immunocastrés.<br />
-	    C’est la raison pour laquelle je vous demande aujourd’hui de vous engager pour l’arrêt de la castration à vif des porcelets en vous approvisionnant chez des éleveurs n’ayant pas recours à cette mutilation, notamment pour les produits de votre marque distributeur.<br />
-	    L’association WELFARM Protection mondiale des animaux de ferme peut vous aider dans cette démarche.<br />
-	    En espérant vous voir réagir au plus vite pour mettre fin à cette pratique, je vous serai gré, Madame, Monsieur, de bien vouloir m’apporter une réponse.<br />
-	    <br />
-	    Email adressé par : Jean Dupont
-	    </p>
-	  </div>
+    <div class="row">
+      <div class="large-8 columns large-centered">
+	<div class="medium-6 columns">
+	  <a class="button marque" target="_blank" href="http://www.e-leclerc.com/catalogue/questions-frequentes/faq---formulaire-produit-repere">Leclerc</a>
+	</div>
+	<div class="medium-6 columns">
+	  <a class="button marque" href="https://ssl.lidl.fr/fr/hotline.htm">Lidle</a>
 	</div>
       </div>
-      <div class="row">
-	<div class="large-10 columns large-centered">
-	  <div class="medium-4 columns">
-	    <input type="text" placeholder="Nom" name="lastname" />
-	  </div>
-	  <div class="medium-4 columns">
-	    <input type="text" placeholder="Prénom" name="firstname" />
-	  </div>
-	  <div class="medium-4 columns">
-	    <input type="text" placeholder="Email" name="email" />
-	  </div>
+    </div>
+  </div>
+  <div class="part-4">
+    <div class="row medium-collapse">
+      <div class="large-8 columns large-centered small-collapse">
+	<div class="small-1 columns">
+	  <div class="number-petition">3</div>
 	</div>
-      </div>
-      <div class="row">
-	<div class="large-10 columns large-centered">
-	  <p class="ou-interpelez">
-	  ou interpelez-les avec le hashtag #couic2018 sur leurs comptes Facebook ou Twitter 
+	<div class="small-11 columns">
+	  <p class="legende-number-petition">
+	  Donnez encore plus de poids à votre démarche :<br />
+	  contactez directement chaque enseigne sur leur page Facebook ou Twitter.<br />
+	  <span class="nobold">Vous pouvez par exemple y copier-coller ce message :</span>
 	  </p>
 	</div>
       </div>
-      <div class="row">
-	<div class="large-10 columns large-centered">
-	  <input type="checkbox" class="checkbox-black" id="2-checkbox">
-	  <label for="2-checkbox">
-	    <span></span>Je souhaite recevoir la newsletter de WELFARM
-	  </label>
-	</div>
-      </div>
-      <div class="row">
-	<div class="large-10 columns large-centered">
-	  <input type="submit" value="J'envoie mon message">
+    </div>
+    <div class="row">
+      <div class="large-5 columns large-centered">
+	<div class="box">
+	  <p>
+	  A quand les produits sans castration à vif des porcelets ? #couic2018
+	  </p>
 	</div>
       </div>
     </div>

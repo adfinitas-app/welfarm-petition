@@ -3,12 +3,10 @@ $(document).foundation();
 merciPath = "/merci.html"
 
 $('.green .part-2').equalize({
-  children: '.block',
-  reset: true
+  children: '.block'
 });
 $('.equal-size').equalize({
-  equalize: 'innerWidth',
-  reset: true
+  equalize: 'innerWidth'
 });
 
 // Make sure firebase API is loaded
@@ -169,6 +167,7 @@ function submitForm() {
       "firstname": pureField($("input[name='firstname']").val()),
       "lastname": pureField($("input[name='lastname']").val()),
       "email": pureField($("input[name='email']").val()),
+      "phone": pureField($("input[name='phone']").val()),
       "optin": optin,
       "event": "petitionporcinet"
     },
@@ -180,6 +179,7 @@ function submitForm() {
 	pureField($("input[name='lastname']").val()),
       "cv_lastname": pureField($("input[name='lastname']").val()),
       "cv_email": pureField($("input[name='email']").val()),
+      "cv_phone": pureField($("input[name='phone']").val()),
       "cv_optin": optin,
       "event": "petitionporcinet",
       "ce_optin": optin
@@ -210,6 +210,9 @@ function showError(elem) {
   } else if (elem.prop("tagName") == "SELECT") {
     elem.parent().parent().addClass("error");
     elem.on("change", removeClass);
+  } else if (elem.attr("name") == "phone") { // For intlTelInput only
+    elem.parent().parent().addClass("error");
+    elem.on("change", removeClass);
   } else {
     elem.parent().addClass("error");
     elem.on("change", removeClass);
@@ -218,7 +221,7 @@ function showError(elem) {
 
 function isValid() {
   var status = true;
-  $(".error").removeClass("error");;
+  $(".error").removeClass("error");
   $("form.petitionForm input").each(function() {
     if ($(this).attr("required") && $(this).attr != "submit") {
       if ($(this).attr("type") == "radio" || $(this).attr("type") == "checkbox") {
@@ -229,7 +232,7 @@ function isValid() {
       } else {
 	if ($(this).val() == "" || $(this).val() == null ||
 	    ($(this).attr("type") == "email" && isValidEmail($(this).val()) == false) ||
-	    ($(this).attr("name") == "phone" && isNaN($(this).val()) == true)) {
+	    ($(this).attr("name") == "phone" && $(this).intlTelInput("isValidNumber") == false)) {
 	  showError($(this));
 	  status = false;
 	}
@@ -244,4 +247,15 @@ $(".petitionForm").on("submit", function(e) {
   if (isValid() == true) {
     counter(submitForm);
   }
+});
+
+$("#id_phone").intlTelInput({
+  utilsScript: "/js/tel-input/lib/libphonenumber/build/utils.js",
+  initialCountry: "fr"
+});
+
+var fb = new Firebase("https://welfarmpetitioncount.firebaseio.com");
+fb.child("counter").on("value", function(snapshot) {
+  $("#nb-signatures").html(snapshot.val());
+  //Firebase.goOffline();
 });
