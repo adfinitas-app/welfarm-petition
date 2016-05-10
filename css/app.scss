@@ -470,6 +470,12 @@ input[type='checkbox'] {
     }
   }
   .part-3 {
+    @media only screen and (max-width: 39.9375em) {
+      .letter {
+	margin-left: -0.625rem;
+	margin-right: -0.625rem;
+      }
+    }
     .letter {
       background-color: $white;
       color: $black;
