@@ -30,13 +30,13 @@ layout: default
     </div>
     <div class="large-5 columns share">
       <p>Je partage :</p>
-      <a href="TODO">
+      <a target="_blank" href="https://www.facebook.com/Welfarm-Protection-mondiale-des-animaux-de-ferme-174152456808/">
 	<img src="/img/fb.png" alt="Facebook">
       </a>
-      <a href="TODO">
+      <a href="https://twitter.com/WelfarmFR">
 	<img src="/img/twitter.png" alt="Twitter">
       </a>
-      <a href="TODO">
+      <a href="https://plus.google.com/105126586053853553774/videos">
 	<img src="/img/google-plus.png" alt="Google+">
       </a>
       <p class="hashtag">#COUIC2016</p>
@@ -211,45 +211,50 @@ layout: default
   </div>
   </div>
   <div class="part-2">
-    <div class="row">
-      <div class="large-10 columns large-centered">
-	<div class="medium-4 columns">
-	  <input type="text" placeholder="Nom" name="name" />
+    <form class="petitionForm" novalidate>
+      <div class="row">
+	<div class="large-10 columns large-centered">
+	  <div class="medium-4 columns">
+	    <input type="text" placeholder="Nom" name="name" required />
+	    <p class="show-error">Le nom n'est pas valide</p>
+	  </div>
+	  <div class="medium-4 columns">
+	    <input type="text" placeholder="Prénom" name="firstname" required />
+	    <p class="show-error">Le prénom n'est pas valide</p>
+	  </div>
+	  <div class="medium-4 columns">
+	    <input type="email" placeholder="Email" name="email" required />
+	    <p class="show-error">L'email n'est pas valide</p>
+	  </div>
 	</div>
-	<div class="medium-4 columns">
-	  <input type="text" placeholder="Prénom" name="firstname" />
+      </div>
+      <div class="row">
+	<div class="large-12 columns">
+	  <input name="optin" type="checkbox" id="1-checkbox">
+	  <label for="1-checkbox">
+	    <span></span>Je souhaite recevoir la newsletter de WELFARM
+	  </label>
 	</div>
-	<div class="medium-4 columns">
-	  <input type="text" placeholder="Email" name="email" />
+      </div>
+      <div class="row large-collapse">
+	<div class="large-offset-4 large-4 columns">
+	  <input type="submit" value="Je signe la pétition">
+	</div>
+	<div class="large-4 columns share">
+	  <p>Je partage :</p>
+	  <a target="_blank" href="https://www.facebook.com/Welfarm-Protection-mondiale-des-animaux-de-ferme-174152456808/">
+	    <img src="/img/fb.png" alt="Facebook">
+	  </a>
+	  <a href="https://twitter.com/WelfarmFR">
+	    <img src="/img/twitter.png" alt="Twitter">
+	  </a>
+	  <a href="https://plus.google.com/105126586053853553774/videos">
+	    <img src="/img/google-plus.png" alt="Google+">
+	  </a>
+	  <p class="hashtag">#COUIC2016</p>
 	</div>
       </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-	<input type="checkbox" id="1-checkbox">
-	<label for="1-checkbox">
-	  <span></span>Je souhaite recevoir la newsletter de WELFARM
-	</label>
-      </div>
-    </div>
-    <div class="row large-collapse">
-      <div class="large-offset-4 large-4 columns">
-	<input type="submit" value="Je signe la pétition">
-      </div>
-      <div class="large-4 columns share">
-	<p>Je partage :</p>
-	<a href="TODO">
-	  <img src="/img/fb.png" alt="Facebook">
-	</a>
-	<a href="TODO">
-	  <img src="/img/twitter.png" alt="Twitter">
-	</a>
-	<a href="TODO">
-	  <img src="/img/google-plus.png" alt="Google+">
-	</a>
-	<p class="hashtag">#COUIC2016</p>
-      </div>
-    </div>
+    </form>
   </div>
 </section>
 <section class="petition-professionels" id="jinterpelle">
@@ -353,7 +358,7 @@ layout: default
       <div class="row">
 	<div class="large-10 columns large-centered">
 	  <div class="medium-4 columns">
-	    <input type="text" placeholder="Nom" name="name" />
+	    <input type="text" placeholder="Nom" name="lastname" />
 	  </div>
 	  <div class="medium-4 columns">
 	    <input type="text" placeholder="Prénom" name="firstname" />
@@ -413,13 +418,13 @@ layout: default
 	<div class="large-12 columns suivre">
 	  <p>Nous suivre sur : </p>
 	  <a target="_blank" href="http://welfarm.fr">welfarm.fr</a>
-	  <a target="_blank" href="TODO">
+	  <a target="_blank" href="https://www.facebook.com/Welfarm-Protection-mondiale-des-animaux-de-ferme-174152456808/">
 	    <img src="/img/fb.png" alt="Facebook">
 	  </a>
-	  <a target="_blank" href="TODO">
+	  <a target="_blank" href="https://twitter.com/WelfarmFR">
 	    <img src="/img/twitter.png" alt="Twitter">
 	  </a>
-	  <a target="_blank" href="TODO">
+	  <a target="_blank" href="https://www.youtube.com/channel/UCiJAjlUSl1cGrQzkDPsw7ng">
 	    <img src="/img/youtube.png" alt="YouTube">
 	  </a>
 	</div>
@@ -427,7 +432,7 @@ layout: default
     </div>
     <div class="row">
       <div class="large-12 columns">
-	<a target="_blank" class="button" href="TODO" alt="">Faire un don</a>
+	<a target="_blank" class="button" href="https://donner.pmaf.org/a/mon-don" alt="">Faire un don</a>
       </div>
     </div>
     <div class="row medium-collapse don-en-confiance">
