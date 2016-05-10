@@ -29,6 +29,7 @@ input[type="submit"] {
   font-family: $helvetica;
   font-weight: bold;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 input[type='checkbox'] {
   display:none;
@@ -75,28 +76,43 @@ input[type='checkbox'] {
   text-transform: uppercase;
   text-align: center;
   color: $white;
+  padding-top: 20px;
   p {
     display: inline-block;
     font-weight: bold;
     font-size: 30px;
-    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 .number {
+  margin: 0 auto;
   font-size: 100px;
   font-weight: bold;
-  position: absolute;
-  top: 0;
+  /*position: absolute;*/
+  /*top: 0;*/
   width: 154px;
   height: 154px;
   border: 2px solid white;
   @include rotate(-3);
+  margin-bottom: 10px;
+  @media only screen and (max-width: 40em) {
+    margin-bottom: 40px;
+  }
 }
 .arrow {
   position: absolute;
-  right: 48%;
+  /* Used to center */
+  right: 0;
+  left: 0;
+  &::after {
+    margin: 0 auto;
+    text-align: center;
+    right: 0;
+    left: 0;
+    position: absolute;
+  }
+  /* */
   &.arrow-black::after {
     content: url('/img/arrow-black.png');
   }
@@ -108,12 +124,17 @@ input[type='checkbox'] {
   }
   /* Arrow for block */
   &.arrow-green {
-    right: 41%;
     top: -17px;
+    z-index: 1;
   }
   &.arrow-green::after {
     content: url('/img/arrow-green.png');
   }
+}
+.delimiter {
+  height: 1px;
+  background-color: $orange;
+  margin-top: 40px;
 }
 
 .header {
@@ -136,6 +157,10 @@ input[type='checkbox'] {
       font-family: $frank;
       color: $orange;
       font-size: 150px;
+      @media only screen and (max-width: 39.9375em) {
+	font-size: 100px;
+	margin-bottom: 10px;
+      }
       text-align: center;
       margin-bottom: -30px;
     }
@@ -147,7 +172,7 @@ input[type='checkbox'] {
     }
     .video {
       height: 324px;
-      width: 562px;
+      max-width: 562px;
       border: 5px solid white;
       background-color: #a0a0a0;
       margin: 0 auto;
@@ -155,8 +180,10 @@ input[type='checkbox'] {
   }
   .header-2 {
     text-align: center;
-    .button-group .button:not(:last-child) {
-      margin-right: 10px;
+    @media only screen and (min-width: 64em) {
+      .button-group .button:not(:last-child) {
+	margin-right: 10px;
+      }
     }
     .button-group .button {
       background-color: $orange;
@@ -178,17 +205,35 @@ input[type='checkbox'] {
     margin-bottom: 10px;
   }
   h4 {
-    display: inline-block;
+    @media only screen and (min-width: 40em) {
+      display: inline-block;
+    }
+    margin-top: 20px;
   }
   .grey-1 {
-    padding-bottom: 80px;
-
+    /* Medium-up */
+    @media only screen and (min-width: 40em) {
+      padding-bottom: 80px;
+    }
     .part-1 {
       font-size: 26px;
       font-weight: bold;
+      @media only screen and (max-width: 39.9375em) {
+	text-align: center;
+      }
+    }
+    /* Small-only */
+    @media only screen and (max-width: 39.9375em) {
+      .part-3 {
+	img {
+	  margin-bottom: 20px;
+	  margin-top: 20px;
+	}
+      }
     }
     .part-3 {
       font-size: 24px;
+      text-align: center;
     }
   }
   .grey-2 {
@@ -222,8 +267,8 @@ input[type='checkbox'] {
     }
   }
   .grey-3 {
-    border-top: 1px solid $orange;
-    margin-top: 40px;
+    /*border-top: 1px solid $orange;*/
+    /*margin-top: 40px;*/
     padding-top: 40px;
     /* Text */
     text-align: center;
@@ -232,6 +277,22 @@ input[type='checkbox'] {
 }
 .green {
   background-color: $green;
+  @media only screen and (max-width: 39.9375em) {
+    background-color: $white;
+    .arrow.arrow-green {
+      display: none;
+    }
+    .part-1 {
+      background-color: $green;
+    }
+    padding-top: 0px;
+    .part-1 {
+      padding-top: 40px;
+    }
+    .part-2 {
+      position: relative;
+    }
+  }
   color: $white;
   text-align: center;
   padding-top: 40px;
@@ -247,16 +308,29 @@ input[type='checkbox'] {
     }
   }
   .part-2 {
+    .no-hide-for-medium {
+      display: block !important;
+    }
     .block {
       background-color: $white;
       /* Used to align the arrow */
       position: relative;
       box-shadow: 0px 0px 10px #707070;
+      @media only screen and (max-width: 40em) {
+	box-shadow: none;
+	height: auto !important;
+      }
       color: $black;
       padding-top: 35px;
       padding-bottom: 10px;
       padding-right: 30px;
       padding-left: 30px;
+      /* Used to avoid the arrow to overlap the block in mobile */
+      margin-top: 40px;
+      @media only screen and (max-width: 40em) {
+	margin-top: 0px;
+      }
+
       h4 {
 	color: $green;
 	text-transform: uppercase;
@@ -436,11 +510,6 @@ input[type='checkbox'] {
     }
     p {
       font-size: 19px;
-    }
-    .delimiter {
-      height: 1px;
-      background-color: $orange;
-      margin-top: 40px;
     }
   }
   .part-2 {
