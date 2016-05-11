@@ -456,7 +456,7 @@ padding-bottom: 40px;
 background-color: $orange;
 color: $white;
 text-align: center;
-padding-bottom: 30px;
+padding-bottom: 40px;
 
 .number-petition {
   background-color: $white;
@@ -478,7 +478,7 @@ padding-bottom: 30px;
   margin-bottom: 25px;
 }
 .part-1 {
-  padding-top: 40px;
+  padding-top: 50px;
   /* Used to position the number */
   position: relative;
   h2 {
@@ -610,4 +610,63 @@ padding-bottom: 30px;
     .informations-legales {
     }
   }
+}
+.merci {
+  background-color: $green;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  color: white;
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .block-list {
+    padding-top: 40px;
+    .block {
+      padding-bottom: 10px;
+      padding-top: 30px;
+      padding-right: 40px;
+      padding-left: 40px;
+      background-color: $black;
+      position: relative;
+      padding-bottom: 90px;
+
+      h3 {
+	line-height: 1;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-family: $titillium;
+      }
+      .subprice {
+	font-size: 12px;
+	font-family: $titillium;
+      }
+      .button {
+	margin-top: 20px;
+	background-color: $black;
+	text-transform: uppercase;
+	background-color: $green-clear;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/* Vertical align at the bottom + center */
+	position: absolute;
+	margin: 0px auto;
+	right: 0px;
+	left: 0px;
+	max-width: 70%;
+	bottom: 25px;
+      }
+    }
+  }
+  .aussi {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+.arrow-merci {
+  top: initial !important;
 }

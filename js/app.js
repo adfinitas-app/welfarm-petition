@@ -5,6 +5,10 @@ merciPath = "/merci.html"
 $('.green .part-2').equalize({
   children: '.block'
 });
+$('.block-list').equalize({
+  children: '.block',
+  equalize: 'outerHeight'
+});
 $('.equal-size').equalize({
   equalize: 'innerWidth'
 });
