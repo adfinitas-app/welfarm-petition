@@ -202,18 +202,14 @@ function fillFieldsFromUrl() {
   }
 }
 
-$(window).onload(function() {
+$(window).load(function() {
   $('.green .part-2').equalize({
-    children: '.block'
-  });
-  $('.block-list').equalize({
     children: '.block',
     equalize: 'outerHeight'
   });
 });
 
 $(document).ready(function() {
-  console.log("OK");
   fillFieldsFromUrl();
   $(".petitionForm").on("submit", function(e) {
     e.preventDefault();
