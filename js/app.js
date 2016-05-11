@@ -1,5 +1,6 @@
 $(document).foundation();
 
+var fbGlobal = new Firebase("https://welfarmpetitioncount.firebaseio.com");
 merciPath = "/merci.html"
 
 $('.green .part-2').equalize({
@@ -9,17 +10,15 @@ $('.block-list').equalize({
   children: '.block',
   equalize: 'outerHeight'
 });
-$('.equal-size').equalize({
-  equalize: 'innerWidth'
-});
 
 // Make sure firebase API is loaded
 function counter(callbackFunction) {
-  var fb = new Firebase("https://welfarmpetitioncount.firebaseio.com");
-  fb.child('counter').transaction(function(currentValue) {
+  Firebase.goOnline();
+  fbGlobal.child('counter').transaction(function(currentValue) {
     return (currentValue||0) + 1;
   }, function(err, committed, snapshot){
     if (committed){
+      $("#nb-signatures").html(snapshot.val());
       //alert('ok :)');
       Firebase.goOffline();
       callbackFunction();
@@ -223,8 +222,7 @@ $("#id_phone").intlTelInput({
   initialCountry: "fr"
 });
 
-var fb = new Firebase("https://welfarmpetitioncount.firebaseio.com");
-fb.child("counter").on("value", function(snapshot) {
+fbGlobal.child("counter").once("value", function(snapshot) {
   $("#nb-signatures").html(snapshot.val());
-  //Firebase.goOffline();
+  Firebase.goOffline();
 });

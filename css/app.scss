@@ -219,6 +219,9 @@ input[type='checkbox'] {
       min-width: 170px;
       box-shadow: 0px 0px 10px $black;
       font-size: 18px;
+      width: 100%;
+      padding-top: 12px;
+      padding-bottom: 12px;
     }
   }
 }
@@ -360,6 +363,10 @@ input[type='checkbox'] {
       padding-left: 30px;
       /* Used to avoid the arrow to overlap the block in mobile */
       margin-top: 40px;
+      &.last {
+	padding-left: 20px;
+	padding-right: 20px;
+      }
       @media only screen and (max-width: 40em) {
 	margin-top: 0px;
       }
@@ -386,6 +393,10 @@ input[type='checkbox'] {
 	line-height: 1.2;
 	font-size: 14px;
       }
+      .row {
+	margin-left: 0;
+	margin-right: 0;
+      }
     }
     > *:nth-child(2) .block {
       h4 {
@@ -407,6 +418,9 @@ input[type='checkbox'] {
       }
       img {
 	margin: 0 auto;
+      }
+      &.last img:not(.green-3-1) {
+	max-width: 45px;
       }
       .row:not(:last-child) {
 	margin-bottom: 10px;
