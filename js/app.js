@@ -69,31 +69,9 @@ if (p['lastname'] && p['lastname'] != "undefined") {
   $("input[name=lastname]").val(p['lastname']);
 }
 
-/*
- * Woopra tag
- */
-
-(function(){
-  var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
-})("woopra");
-
-// TODO
-woopra.config({
-  //domain: 'spa.asso.fr',
-  //cookie_domain:'.spa.asso.fr'
-});
-
-if (p['email'] && p['email'] != "undefined") {
-  if (p['firstname'] && p['firstname'] != "undefined" &&
-      p['lastname'] && p['lastname'] != "undefined") {
-    woopra.identify({
-      email: p['email'],
-      name: p['firstname'] + ' ' + p['lastname']
-    });
-  } else {woopra.identify({email: p['email']})}
+if (p['phone'] && p['phone'] != "undefined") {
+  $("input[name=phone]").val(p['phone']);
 }
-
-woopra.track();
 
 /*
  * Debut de la lib
@@ -174,19 +152,6 @@ function submitForm() {
       "phone": pureField($("input[name='phone']").val()),
       "optin": optin,
       "event": "petitionporcinet"
-    },
-    "woopra" : {
-      "host": "", //TODO
-      "cookie": getCookie("wooTracker"),
-      "cv_firstname": pureField($("input[name='firstname']").val()),
-      "cv_name": pureField($("input[name='firstname']").val()) + ' ' +
-	pureField($("input[name='lastname']").val()),
-      "cv_lastname": pureField($("input[name='lastname']").val()),
-      "cv_email": pureField($("input[name='email']").val()),
-      "cv_phone": pureField($("input[name='phone']").val()),
-      "cv_optin": optin,
-      "event": "petitionporcinet",
-      "ce_optin": optin
     }
   }
   makeCorsRequest(data);
