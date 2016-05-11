@@ -1,15 +1,5 @@
-$(document).foundation();
-
 var fbGlobal = new Firebase("https://welfarmpetitioncount.firebaseio.com");
 merciPath = "/merci.html"
-
-$('.green .part-2').equalize({
-  children: '.block'
-});
-$('.block-list').equalize({
-  children: '.block',
-  equalize: 'outerHeight'
-});
 
 // Make sure firebase API is loaded
 function counter(callbackFunction) {
@@ -53,24 +43,6 @@ function extractUrlParams(){
   }
   return f;
 };
-
-p = extractUrlParams();
-
-if (p['email'] && p['email'] != "undefined") {
-  $("input[name=email]").val(p['email']);
-}
-
-if (p['firstname'] && p['firstname'] != "undefined") {
-  $("input[name=firstname]").val(p['firstname']);
-}
-
-if (p['lastname'] && p['lastname'] != "undefined") {
-  $("input[name=lastname]").val(p['lastname']);
-}
-
-if (p['phone'] && p['phone'] != "undefined") {
-  $("input[name=phone]").val(p['phone']);
-}
 
 /*
  * Debut de la lib
@@ -210,19 +182,55 @@ function isValid() {
   return (status);
 }
 
-$(".petitionForm").on("submit", function(e) {
-  e.preventDefault();
-  if (isValid() == true) {
-    counter(submitForm);
+function fillFieldsFromUrl() {
+  p = extractUrlParams();
+
+  if (p['email'] && p['email'] != "undefined") {
+    $("input[name=email]").val(p['email']);
   }
+
+  if (p['firstname'] && p['firstname'] != "undefined") {
+    $("input[name=firstname]").val(p['firstname']);
+  }
+
+  if (p['lastname'] && p['lastname'] != "undefined") {
+    $("input[name=lastname]").val(p['lastname']);
+  }
+
+  if (p['phone'] && p['phone'] != "undefined") {
+    $("input[name=phone]").val(p['phone']);
+  }
+}
+
+$(window).onload(function() {
+  $('.green .part-2').equalize({
+    children: '.block'
+  });
+  $('.block-list').equalize({
+    children: '.block',
+    equalize: 'outerHeight'
+  });
 });
 
-$("#id_phone").intlTelInput({
-  utilsScript: "/js/tel-input/lib/libphonenumber/build/utils.js",
-  initialCountry: "fr"
+$(document).ready(function() {
+  console.log("OK");
+  fillFieldsFromUrl();
+  $(".petitionForm").on("submit", function(e) {
+    e.preventDefault();
+    if (isValid() == true) {
+      counter(submitForm);
+    }
+  });
+
+  $("#id_phone").intlTelInput({
+    utilsScript: "/js/tel-input/lib/libphonenumber/build/utils.js",
+    initialCountry: "fr"
+  });
+
+  fbGlobal.child("counter").once("value", function(snapshot) {
+    $("#nb-signatures").html(snapshot.val());
+    Firebase.goOffline();
+  });
 });
 
-fbGlobal.child("counter").once("value", function(snapshot) {
-  $("#nb-signatures").html(snapshot.val());
-  Firebase.goOffline();
-});
+$(document).foundation();
