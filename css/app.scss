@@ -15,6 +15,13 @@ input[type="text"], input[type="email"] {
 .error input[type="text"], .error input[type="email"] {
   border: 2px solid red;
 }
+.intl-tel-input .country-list {
+  text-align: left;
+  color: black;
+}
+.intl-tel-input {
+  width: 100%;
+}
 label {
   color: $white;
   font-size: 20px;
@@ -147,10 +154,6 @@ input[type='checkbox'] {
   height: 1px;
   background-color: $orange;
   margin-top: 40px;
-}
-.intl-tel-input .country-list {
-  text-align: left;
-  color: black;
 }
 
 .header {

@@ -218,6 +218,10 @@ $(document).ready(function() {
     }
   });
 
+  $(".social-network").on("click", function(e) {
+    e.preventDefault();
+    window.open($(this).attr('href'),'Je partage', 'height=500,width=500');
+  });
   $("#id_phone").intlTelInput({
     utilsScript: "/js/tel-input/lib/libphonenumber/build/utils.js",
     initialCountry: "fr"
