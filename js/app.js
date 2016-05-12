@@ -203,7 +203,7 @@ function fillFieldsFromUrl() {
 }
 
 $(window).load(function() {
-  $('.green .part-2').equalize({
+  $('.block-list').equalize({
     children: '.block',
     equalize: 'outerHeight'
   });
