@@ -653,7 +653,7 @@ input[type='checkbox'] {
     text-transform: uppercase;
   }
   .block-list {
-    padding-top: 40px;
+    padding-top: 20px;
     .block {
       padding-bottom: 10px;
       padding-top: 30px;
@@ -662,6 +662,7 @@ input[type='checkbox'] {
       background-color: $black;
       position: relative;
       padding-bottom: 90px;
+      margin-top: 20px;
 
       h3 {
 	line-height: 1;
@@ -673,6 +674,16 @@ input[type='checkbox'] {
 	font-size: 12px;
 	font-family: $titillium;
       }
+      .button-container {
+	position: absolute;
+	margin: 0px auto;
+	right: 0px;
+	left: 0px;
+	bottom: 25px;
+	/*max-width: 70%;*/
+	width: 100%;
+	left: 50%;
+      }
       .button {
 	margin-top: 20px;
 	background-color: $black;
@@ -682,12 +693,8 @@ input[type='checkbox'] {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	/* Vertical align at the bottom + center */
-	position: absolute;
-	margin: 0px auto;
-	right: 0px;
-	left: 0px;
-	max-width: 70%;
-	bottom: 25px;
+	position: relative;
+	left: -50%;
       }
     }
   }
