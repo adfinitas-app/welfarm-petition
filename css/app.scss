@@ -3,6 +3,10 @@
 
 @import 'global';
 
+/* Fix from Foundation Essential to Foundation Complete */
+.button-group .button {
+  margin: 0 0 1rem 0;
+}
 body {
   font-family: $helvetica;
 }
