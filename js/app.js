@@ -114,6 +114,7 @@ function submitForm() {
   } else {
     optin = false;
   }
+  today = new Date();
   var data = {
     "schema": "welfarm",
     "db": {
@@ -122,7 +123,8 @@ function submitForm() {
       "email": pureField($("input[name='email']").val()),
       "phone": pureField($("input[name='phone']").val()),
       "optin": optin,
-      "event": "petitionporcinet"
+      "event": "petitionporcinet",
+      "signin_date": today.toString();
     }
   }
   makeCorsRequest(data);
