@@ -124,7 +124,7 @@ function submitForm() {
       "phone": pureField($("input[name='phone']").val()),
       "optin": optin,
       "event": "petitionporcinet",
-      "signin_date": today.toString();
+      "signin_date": today.toString()
     }
   }
   makeCorsRequest(data);
