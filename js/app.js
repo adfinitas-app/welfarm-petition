@@ -211,6 +211,13 @@ $(window).load(function() {
   });
 });
 
+function launchAnimation() {
+  if ($("#canvas:in-viewport").length > 0) {
+    initAnimation();
+    $(window).off("scroll");
+  }
+}
+
 $(document).ready(function() {
   fillFieldsFromUrl();
   $(".petitionForm").on("submit", function(e) {
@@ -233,6 +240,8 @@ $(document).ready(function() {
     $("#nb-signatures").html(snapshot.val());
     Firebase.goOffline();
   });
+  $(window).on("scroll", launchAnimation);
+  launchAnimation();
 });
 
 $(document).foundation();
