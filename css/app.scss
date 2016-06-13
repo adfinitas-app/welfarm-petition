@@ -585,6 +585,9 @@ input[type='checkbox'] {
       font-size: 20px;
       text-align : left;
       padding: 20px 45px;
+      &:first-child {
+	margin-bottom: 20px;
+      }
     }
   }
 }
