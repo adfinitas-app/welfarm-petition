@@ -5,7 +5,7 @@ lib.webFontTxtFilters = {};
 
 // library properties:
 lib.properties = {
-	width: 500,
+	width: 600,
 	height: 566,
 	fps: 24,
 	color: "#F0931D",
@@ -661,6 +661,44 @@ p.nominalBounds = new cjs.Rectangle(0,14,241,37);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(4.7,188.1,241,37.1);
+
+
+(lib.auchan = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Calque 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#F0931D").s().p("AAWA5IgthQIAABQIgWAAIAAhxIAZAAIArBOIAAhOIAXAAIAABxg");
+	this.shape.setTransform(-8.2,32.1);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#F0931D").s().p("AAcA5IgIgYIgoAAIgIAYIgZAAIAphxIAaAAIAoBxgAAOANIgOgrIgOArIAcAAg");
+	this.shape_1.setTransform(-19.8,32.1);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#F0931D").s().p("AAWA5IAAg0IgrAAIAAA0IgYAAIAAhxIAYAAIAAAsIArAAIAAgsIAYAAIAABxg");
+	this.shape_2.setTransform(-31.4,32.1);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#F0931D").s().p("AgjAsQgOgQAAgcQAAgcAQgQQAOgPATAAQAdAAANATQAIALAAALIgYAAQgCgIgEgFQgGgHgNAAQgLAAgHALQgHAKAAASQAAATAHAKQAIAJAKAAQANAAAGgIQAEgFACgIIAYAAQgDASgNAMQgMAMgUAAQgXAAgOgQg");
+	this.shape_3.setTransform(-43,32.1);
+
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#F0931D").s().p("AgnAoQgGgLAAgSIAAhEIAZAAIAABEQAAAMADAGQAEAJANAAQAOAAAFgJQACgGAAgMIAAhEIAZAAIAABEQAAASgGALQgKASgeABQgcgBgLgSg");
+	this.shape_4.setTransform(-54.5,32.3);
+
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#F0931D").s().p("AAcA5IgIgYIgoAAIgIAYIgZAAIAphxIAZAAIApBxgAAOANIgOgrIgOArIAcAAg");
+	this.shape_5.setTransform(-66,32.1);
+
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("#FFFFFF").s().p("AqqC4IAAlwIR8ABIDZC2IjZC6g");
+	this.shape_6.setTransform(-29.2,32.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-157.6,14,241,37.1);
 
 
 (lib.cochonMonoprix = function(mode,startPosition,loop) {
@@ -1676,8 +1714,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			//alert("L’utilisateur a cliqué sur Carrefour");
-			//$('#myModal').foundation('reveal', 'open');
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealCarrefour').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1696,6 +1733,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealHerta').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1706,6 +1744,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealHenaff').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1716,6 +1755,18 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealAuchan').foundation('open');
+			// Fin de votre code personnalisé
+		}
+
+		this.monoprix_1.addEventListener("click", fl_MouseClickHandlerMonoprix_1.bind(this));
+		
+		function fl_MouseClickHandlerMonoprix_1()
+		{
+			// Début de votre code personnalisé
+			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealMonoprix').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1726,6 +1777,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealIntermarche').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1736,6 +1788,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealFleuryMichon').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1746,6 +1799,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealCora').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1756,6 +1810,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealLidl').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1766,6 +1821,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealLeclerc').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1776,6 +1832,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealSystemeU').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1786,6 +1843,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealCasino').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1796,6 +1854,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
 			$('#revealBordeauChesnel').foundation('open');
 			// Fin de votre code personnalisé
 		}
@@ -1809,146 +1868,153 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 
 	// Calque 1 copy 10
 	this.systemeU = new lib.systemeU();
-	this.systemeU.setTransform(435.3,551.8,0.8,0.8,0,0,0,120.4,24.7);
+	this.systemeU.setTransform(535.3,551.8,0.8,0.8,0,0,0,120.4,24.7);
 	this.systemeU._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.systemeU).wait(149).to({_off:false},0).wait(1));
 
 	// Calque 1 copy 8
 	this.leclerc = new lib.leclerc();
-	this.leclerc.setTransform(314.8,551.8,0.8,0.8,0,0,0,120.4,24.7);
+	this.leclerc.setTransform(414.8,551.8,0.8,0.8,0,0,0,120.4,24.7);
 	this.leclerc._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.leclerc).wait(149).to({_off:false},0).wait(1));
 
 	// Calque 1 copy 9
 	this.lidl = new lib.lidl();
-	this.lidl.setTransform(94.8,551.8,0.8,0.8,0,0,0,120.4,24.7);
+	this.lidl.setTransform(194.8,551.8,0.8,0.8,0,0,0,120.4,24.7);
 	this.lidl._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.lidl).wait(149).to({_off:false},0).wait(1));
 
 	// picto cochon copy 6
 	this.instance = new lib.cochonLidl();
-	this.instance.setTransform(200,547,0.15,0.15,0,0,0,0,20);
+	this.instance.setTransform(300,547,0.15,0.15,0,0,0,0,20);
 	this.instance._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(149).to({_off:false},0).wait(1));
 
 	// Calque 1 copy 6
 	this.cora = new lib.cora();
-	this.cora.setTransform(306.4,585.8,0.8,0.8,0,0,0,120.4,24.7);
+	this.cora.setTransform(406.4,585.8,0.8,0.8,0,0,0,120.4,24.7);
 	this.cora._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.cora).wait(111).to({_off:false},0).wait(1).to({regX:109.1,regY:-24,x:297.3,y:542.2},0).wait(1).to({y:537.5},0).wait(1).to({y:532.9},0).wait(1).to({y:528.3},0).wait(1).to({y:523.6},0).wait(1).to({y:519},0).wait(1).to({y:514.4},0).wait(1).to({y:509.7},0).wait(1).to({y:505.1},0).wait(1).to({y:500.5},0).wait(1).to({y:495.8},0).wait(1).to({y:491.2},0).wait(1).to({y:486.6},0).wait(1).to({y:481.9},0).wait(1).to({y:477.3},0).wait(1).to({y:472.7},0).wait(1).to({y:468},0).wait(1).to({y:463.4},0).wait(1).to({y:458.8},0).wait(1).to({y:454.1},0).wait(1).to({y:449.5},0).wait(1).to({y:444.9},0).wait(1).to({y:440.2},0).wait(1).to({y:435.6},0).wait(1).to({y:431},0).wait(1).to({y:426.3},0).wait(1).to({y:421.7},0).wait(1).to({y:417.1},0).wait(1).to({y:412.4},0).wait(1).to({y:407.8},0).wait(9));
+	this.timeline.addTween(cjs.Tween.get(this.cora).wait(111).to({_off:false},0).wait(1).to({regX:109.1,regY:-24,x:397.3,y:542.2},0).wait(1).to({y:537.5},0).wait(1).to({y:532.9},0).wait(1).to({y:528.3},0).wait(1).to({y:523.6},0).wait(1).to({y:519},0).wait(1).to({y:514.4},0).wait(1).to({y:509.7},0).wait(1).to({y:505.1},0).wait(1).to({y:500.5},0).wait(1).to({y:495.8},0).wait(1).to({y:491.2},0).wait(1).to({y:486.6},0).wait(1).to({y:481.9},0).wait(1).to({y:477.3},0).wait(1).to({y:472.7},0).wait(1).to({y:468},0).wait(1).to({y:463.4},0).wait(1).to({y:458.8},0).wait(1).to({y:454.1},0).wait(1).to({y:449.5},0).wait(1).to({y:444.9},0).wait(1).to({y:440.2},0).wait(1).to({y:435.6},0).wait(1).to({y:431},0).wait(1).to({y:426.3},0).wait(1).to({y:421.7},0).wait(1).to({y:417.1},0).wait(1).to({y:412.4},0).wait(1).to({y:407.8},0).wait(9));
 
 	// Calque 1 copy 7
 	this.fleurymichon = new lib.fleurymichon();
-	this.fleurymichon.setTransform(76.4,540.8,0.8,0.8,0,0,0,120.4,24.7);
+	this.fleurymichon.setTransform(176.4,540.8,0.8,0.8,0,0,0,120.4,24.7);
 	this.fleurymichon._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.fleurymichon).wait(111).to({_off:false},0).wait(1).to({regX:131.8,regY:32.2,x:85.5,y:542.1},0).wait(1).to({y:537.5},0).wait(1).to({y:532.8},0).wait(1).to({y:528.2},0).wait(1).to({y:523.6},0).wait(1).to({y:518.9},0).wait(1).to({y:514.3},0).wait(1).to({y:509.7},0).wait(1).to({y:505},0).wait(1).to({y:500.4},0).wait(1).to({y:495.8},0).wait(1).to({y:491.1},0).wait(1).to({y:486.5},0).wait(1).to({y:481.9},0).wait(1).to({y:477.2},0).wait(1).to({y:472.6},0).wait(1).to({y:468},0).wait(1).to({y:463.3},0).wait(1).to({y:458.7},0).wait(1).to({y:454.1},0).wait(1).to({y:449.4},0).wait(1).to({y:444.8},0).wait(1).to({y:440.2},0).wait(1).to({y:435.5},0).wait(1).to({y:430.9},0).wait(1).to({y:426.3},0).wait(1).to({y:421.6},0).wait(1).to({y:417},0).wait(1).to({y:412.4},0).wait(1).to({y:407.7},0).wait(9));
+	this.timeline.addTween(cjs.Tween.get(this.fleurymichon).wait(111).to({_off:false},0).wait(1).to({regX:131.8,regY:32.2,x:185.5,y:542.1},0).wait(1).to({y:537.5},0).wait(1).to({y:532.8},0).wait(1).to({y:528.2},0).wait(1).to({y:523.6},0).wait(1).to({y:518.9},0).wait(1).to({y:514.3},0).wait(1).to({y:509.7},0).wait(1).to({y:505},0).wait(1).to({y:500.4},0).wait(1).to({y:495.8},0).wait(1).to({y:491.1},0).wait(1).to({y:486.5},0).wait(1).to({y:481.9},0).wait(1).to({y:477.2},0).wait(1).to({y:472.6},0).wait(1).to({y:468},0).wait(1).to({y:463.3},0).wait(1).to({y:458.7},0).wait(1).to({y:454.1},0).wait(1).to({y:449.4},0).wait(1).to({y:444.8},0).wait(1).to({y:440.2},0).wait(1).to({y:435.5},0).wait(1).to({y:430.9},0).wait(1).to({y:426.3},0).wait(1).to({y:421.6},0).wait(1).to({y:417},0).wait(1).to({y:412.4},0).wait(1).to({y:407.7},0).wait(9));
 
 	// picto cochon copy 5
 	this.instance_1 = new lib.cochonFleuy();
-	this.instance_1.setTransform(200,547,0.15,0.15,0,0,0,0,20);
+	this.instance_1.setTransform(300,547,0.15,0.15,0,0,0,0,20);
 	this.instance_1._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(111).to({_off:false},0).wait(1).to({y:542.4},0).wait(1).to({y:537.9},0).wait(1).to({y:533.3},0).wait(1).to({y:528.7},0).wait(1).to({y:524.2},0).wait(1).to({y:519.6},0).wait(1).to({y:515},0).wait(1).to({y:510.5},0).wait(1).to({y:505.9},0).wait(1).to({y:501.3},0).wait(1).to({y:496.8},0).wait(1).to({y:492.2},0).wait(1).to({y:487.7},0).wait(1).to({y:483.1},0).wait(1).to({y:478.5},0).wait(1).to({y:474},0).wait(1).to({y:469.4},0).wait(1).to({y:464.8},0).wait(1).to({y:460.3},0).wait(1).to({y:455.7},0).wait(1).to({y:451.1},0).wait(1).to({y:446.6},0).wait(1).to({y:442},0).wait(1).to({y:437.4},0).wait(1).to({y:432.9},0).wait(1).to({y:428.3},0).wait(1).to({y:423.7},0).wait(1).to({y:419.2},0).wait(1).to({y:414.6},0).wait(1).to({y:410},0).wait(9));
 
 	// Calque 1 copy 12
 	this.casino = new lib.Casino();
-	this.casino.setTransform(452.3,634.5,0.8,0.8,0,0,0,120.4,24.7);
+	this.casino.setTransform(552.3,634.5,0.8,0.8,0,0,0,120.4,24.7);
 	this.casino._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.casino).wait(80).to({_off:false},0).wait(1).to({regX:109.4,regY:-82.5,x:443.5,y:541.5},0).wait(1).to({y:534.3},0).wait(1).to({y:527.1},0).wait(1).to({y:519.9},0).wait(1).to({y:512.7},0).wait(1).to({y:505.5},0).wait(1).to({y:498.3},0).wait(1).to({y:491.1},0).wait(1).to({y:483.9},0).wait(1).to({y:476.7},0).wait(1).to({y:469.5},0).wait(1).to({y:462.3},0).wait(1).to({y:455.1},0).wait(1).to({y:447.9},0).wait(1).to({y:440.7},0).wait(1).to({y:433.5},0).wait(1).to({y:426.3},0).wait(1).to({y:419.1},0).wait(1).to({y:411.9},0).wait(1).to({y:404.6},0).wait(1).to({y:397.4},0).wait(1).to({y:390.2},0).wait(1).to({y:383},0).wait(1).to({y:375.8},0).wait(1).to({y:368.6},0).wait(1).to({y:361.4},0).wait(1).to({y:354.2},0).wait(1).to({y:347},0).wait(1).to({y:339.8},0).wait(1).to({y:332.6},0).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.casino).wait(80).to({_off:false},0).wait(1).to({regX:109.4,regY:-82.5,x:543.5,y:541.5},0).wait(1).to({y:534.3},0).wait(1).to({y:527.1},0).wait(1).to({y:519.9},0).wait(1).to({y:512.7},0).wait(1).to({y:505.5},0).wait(1).to({y:498.3},0).wait(1).to({y:491.1},0).wait(1).to({y:483.9},0).wait(1).to({y:476.7},0).wait(1).to({y:469.5},0).wait(1).to({y:462.3},0).wait(1).to({y:455.1},0).wait(1).to({y:447.9},0).wait(1).to({y:440.7},0).wait(1).to({y:433.5},0).wait(1).to({y:426.3},0).wait(1).to({y:419.1},0).wait(1).to({y:411.9},0).wait(1).to({y:404.6},0).wait(1).to({y:397.4},0).wait(1).to({y:390.2},0).wait(1).to({y:383},0).wait(1).to({y:375.8},0).wait(1).to({y:368.6},0).wait(1).to({y:361.4},0).wait(1).to({y:354.2},0).wait(1).to({y:347},0).wait(1).to({y:339.8},0).wait(1).to({y:332.6},0).wait(40));
 
 	// Calque 1 copy 5
 	this.intermarche = new lib.intermarché();
-	this.intermarche.setTransform(326.4,587.5,0.8,0.8,0,0,0,120.4,24.7);
+	this.intermarche.setTransform(426.4,587.5,0.8,0.8,0,0,0,120.4,24.7);
 	this.intermarche._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.intermarche).wait(80).to({_off:false},0).wait(1).to({regX:109,regY:-23.7,x:317.2,y:541.6},0).wait(1).to({y:534.4},0).wait(1).to({y:527.2},0).wait(1).to({y:520},0).wait(1).to({y:512.8},0).wait(1).to({y:505.6},0).wait(1).to({y:498.4},0).wait(1).to({y:491.1},0).wait(1).to({y:483.9},0).wait(1).to({y:476.7},0).wait(1).to({y:469.5},0).wait(1).to({y:462.3},0).wait(1).to({y:455.1},0).wait(1).to({y:447.9},0).wait(1).to({y:440.7},0).wait(1).to({y:433.5},0).wait(1).to({y:426.3},0).wait(1).to({y:419.1},0).wait(1).to({y:411.9},0).wait(1).to({y:404.7},0).wait(1).to({y:397.5},0).wait(1).to({y:390.3},0).wait(1).to({y:383},0).wait(1).to({y:375.8},0).wait(1).to({y:368.6},0).wait(1).to({y:361.4},0).wait(1).to({y:354.2},0).wait(1).to({y:347},0).wait(1).to({y:339.8},0).wait(1).to({y:332.6},0).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.intermarche).wait(80).to({_off:false},0).wait(1).to({regX:109,regY:-23.7,x:417.2,y:541.6},0).wait(1).to({y:534.4},0).wait(1).to({y:527.2},0).wait(1).to({y:520},0).wait(1).to({y:512.8},0).wait(1).to({y:505.6},0).wait(1).to({y:498.4},0).wait(1).to({y:491.1},0).wait(1).to({y:483.9},0).wait(1).to({y:476.7},0).wait(1).to({y:469.5},0).wait(1).to({y:462.3},0).wait(1).to({y:455.1},0).wait(1).to({y:447.9},0).wait(1).to({y:440.7},0).wait(1).to({y:433.5},0).wait(1).to({y:426.3},0).wait(1).to({y:419.1},0).wait(1).to({y:411.9},0).wait(1).to({y:404.7},0).wait(1).to({y:397.5},0).wait(1).to({y:390.3},0).wait(1).to({y:383},0).wait(1).to({y:375.8},0).wait(1).to({y:368.6},0).wait(1).to({y:361.4},0).wait(1).to({y:354.2},0).wait(1).to({y:347},0).wait(1).to({y:339.8},0).wait(1).to({y:332.6},0).wait(40));
 
-	// Calque 1 copy 4
-	this.monoprix = new lib.monoprix();
-	this.monoprix.setTransform(76.4,541.5,0.8,0.8,0,0,0,120.4,24.7);
+	// Calque 1 copy 13
+	this.monoprix = new lib.auchan();
+	this.monoprix.setTransform(176.4,541.5,0.8,0.8,0,0,0,120.4,24.7);
 	this.monoprix._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.monoprix).wait(80).to({_off:false},0).wait(1).to({regX:131.3,regY:32.5,x:85.1,y:540.6},0).wait(1).to({y:533.4},0).wait(1).to({y:526.2},0).wait(1).to({y:519.1},0).wait(1).to({y:511.9},0).wait(1).to({y:504.7},0).wait(1).to({y:497.5},0).wait(1).to({y:490.4},0).wait(1).to({y:483.2},0).wait(1).to({y:476},0).wait(1).to({y:468.8},0).wait(1).to({y:461.7},0).wait(1).to({y:454.5},0).wait(1).to({y:447.3},0).wait(1).to({y:440.1},0).wait(1).to({y:433},0).wait(1).to({y:425.8},0).wait(1).to({y:418.6},0).wait(1).to({y:411.5},0).wait(1).to({y:404.3},0).wait(1).to({y:397.1},0).wait(1).to({y:389.9},0).wait(1).to({y:382.8},0).wait(1).to({y:375.6},0).wait(1).to({y:368.4},0).wait(1).to({y:361.2},0).wait(1).to({y:354.1},0).wait(1).to({y:346.9},0).wait(1).to({y:339.7},0).wait(1).to({y:332.5},0).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.monoprix).wait(80).to({_off:false},0).wait(1).to({regX:-29.2,regY:32.5,x:56.7,y:540.6},0).wait(1).to({y:533.4},0).wait(1).to({y:526.2},0).wait(1).to({y:519.1},0).wait(1).to({y:511.9},0).wait(1).to({y:504.7},0).wait(1).to({y:497.5},0).wait(1).to({y:490.4},0).wait(1).to({y:483.2},0).wait(1).to({y:476},0).wait(1).to({y:468.8},0).wait(1).to({y:461.7},0).wait(1).to({y:454.5},0).wait(1).to({y:447.3},0).wait(1).to({y:440.1},0).wait(1).to({y:433},0).wait(1).to({y:425.8},0).wait(1).to({y:418.6},0).wait(1).to({y:411.5},0).wait(1).to({y:404.3},0).wait(1).to({y:397.1},0).wait(1).to({y:389.9},0).wait(1).to({y:382.8},0).wait(1).to({y:375.6},0).wait(1).to({y:368.4},0).wait(1).to({y:361.2},0).wait(1).to({y:354.1},0).wait(1).to({y:346.9},0).wait(1).to({y:339.7},0).wait(1).to({y:332.5},0).wait(40));
+
+	// Calque 1 copy 4
+	this.monoprix_1 = new lib.monoprix();
+	this.monoprix_1.setTransform(176.4,541.5,0.8,0.8,0,0,0,120.4,24.7);
+	this.monoprix_1._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.monoprix_1).wait(80).to({_off:false},0).wait(1).to({regX:131.3,regY:32.5,x:185.1,y:540.6},0).wait(1).to({y:533.4},0).wait(1).to({y:526.2},0).wait(1).to({y:519.1},0).wait(1).to({y:511.9},0).wait(1).to({y:504.7},0).wait(1).to({y:497.5},0).wait(1).to({y:490.4},0).wait(1).to({y:483.2},0).wait(1).to({y:476},0).wait(1).to({y:468.8},0).wait(1).to({y:461.7},0).wait(1).to({y:454.5},0).wait(1).to({y:447.3},0).wait(1).to({y:440.1},0).wait(1).to({y:433},0).wait(1).to({y:425.8},0).wait(1).to({y:418.6},0).wait(1).to({y:411.5},0).wait(1).to({y:404.3},0).wait(1).to({y:397.1},0).wait(1).to({y:389.9},0).wait(1).to({y:382.8},0).wait(1).to({y:375.6},0).wait(1).to({y:368.4},0).wait(1).to({y:361.2},0).wait(1).to({y:354.1},0).wait(1).to({y:346.9},0).wait(1).to({y:339.7},0).wait(1).to({y:332.5},0).wait(40));
 
 	// picto cochon copy 4
 	this.instance_2 = new lib.cochonMonoprix();
-	this.instance_2.setTransform(200,547,0.15,0.15,0,0,0,0,20);
+	this.instance_2.setTransform(300,547,0.15,0.15,0,0,0,0,20);
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(80).to({_off:false},0).wait(1).to({y:539.9},0).wait(1).to({y:532.7},0).wait(1).to({y:525.6},0).wait(1).to({y:518.4},0).wait(1).to({y:511.3},0).wait(1).to({y:504.1},0).wait(1).to({y:497},0).wait(1).to({y:489.8},0).wait(1).to({y:482.7},0).wait(1).to({y:475.5},0).wait(1).to({y:468.4},0).wait(1).to({y:461.2},0).wait(1).to({y:454.1},0).wait(1).to({y:446.9},0).wait(1).to({y:439.8},0).wait(1).to({y:432.7},0).wait(1).to({y:425.5},0).wait(1).to({y:418.4},0).wait(1).to({y:411.2},0).wait(1).to({y:404.1},0).wait(1).to({y:396.9},0).wait(1).to({y:389.8},0).wait(1).to({y:382.6},0).wait(1).to({y:375.5},0).wait(1).to({y:368.3},0).wait(1).to({y:361.2},0).wait(1).to({y:354},0).wait(1).to({y:346.9},0).wait(1).to({y:339.7},0).wait(1).to({y:332.6},0).wait(40));
 
 	// Calque 1 copy 11
 	this.bordeauChesnel = new lib.bordeauChesnel();
-	this.bordeauChesnel.setTransform(340.3,401.1,0.8,0.8,0,0,0,120.4,24.7);
+	this.bordeauChesnel.setTransform(440.3,401.1,0.8,0.8,0,0,0,120.4,24.7);
 	this.bordeauChesnel._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.bordeauChesnel).wait(56).to({_off:false},0).wait(1).to({regX:115,regY:206.6,x:336,y:535.3},0).wait(1).to({y:523.9},0).wait(1).to({y:512.6},0).wait(1).to({y:501.2},0).wait(1).to({y:489.9},0).wait(1).to({y:478.6},0).wait(1).to({y:467.2},0).wait(1).to({y:455.9},0).wait(1).to({y:444.5},0).wait(1).to({y:433.2},0).wait(1).to({y:421.8},0).wait(1).to({y:410.5},0).wait(1).to({y:399.2},0).wait(1).to({y:387.8},0).wait(1).to({y:376.5},0).wait(1).to({y:365.1},0).wait(1).to({y:353.8},0).wait(1).to({y:342.5},0).wait(1).to({y:331.1},0).wait(1).to({y:319.8},0).wait(1).to({y:308.4},0).wait(1).to({y:297.1},0).wait(1).to({y:285.7},0).wait(71));
+	this.timeline.addTween(cjs.Tween.get(this.bordeauChesnel).wait(56).to({_off:false},0).wait(1).to({regX:115,regY:206.6,x:436,y:535.3},0).wait(1).to({y:523.9},0).wait(1).to({y:512.6},0).wait(1).to({y:501.2},0).wait(1).to({y:489.9},0).wait(1).to({y:478.6},0).wait(1).to({y:467.2},0).wait(1).to({y:455.9},0).wait(1).to({y:444.5},0).wait(1).to({y:433.2},0).wait(1).to({y:421.8},0).wait(1).to({y:410.5},0).wait(1).to({y:399.2},0).wait(1).to({y:387.8},0).wait(1).to({y:376.5},0).wait(1).to({y:365.1},0).wait(1).to({y:353.8},0).wait(1).to({y:342.5},0).wait(1).to({y:331.1},0).wait(1).to({y:319.8},0).wait(1).to({y:308.4},0).wait(1).to({y:297.1},0).wait(1).to({y:285.7},0).wait(71));
 
 	// Calque 1 copy 3
 	this.henaff = new lib.henaff();
-	this.henaff.setTransform(91.4,444.1,0.8,0.8,0,0,0,120.4,24.7);
+	this.henaff.setTransform(191.4,444.1,0.8,0.8,0,0,0,120.4,24.7);
 	this.henaff._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.henaff).wait(56).to({_off:false},0).wait(1).to({regX:134.7,regY:152.9,x:102.8,y:535.3},0).wait(1).to({y:523.9},0).wait(1).to({y:512.5},0).wait(1).to({y:501.1},0).wait(1).to({y:489.7},0).wait(1).to({y:478.3},0).wait(1).to({y:466.9},0).wait(1).to({y:455.6},0).wait(1).to({y:444.2},0).wait(1).to({y:432.8},0).wait(1).to({y:421.4},0).wait(1).to({y:410},0).wait(1).to({y:398.6},0).wait(1).to({y:387.2},0).wait(1).to({y:375.8},0).wait(1).to({y:364.5},0).wait(1).to({y:353.1},0).wait(1).to({y:341.7},0).wait(1).to({y:330.3},0).wait(1).to({y:318.9},0).wait(1).to({y:307.5},0).wait(1).to({y:296.1},0).wait(1).to({y:284.7},0).wait(71));
+	this.timeline.addTween(cjs.Tween.get(this.henaff).wait(56).to({_off:false},0).wait(1).to({regX:134.7,regY:152.9,x:202.8,y:535.3},0).wait(1).to({y:523.9},0).wait(1).to({y:512.5},0).wait(1).to({y:501.1},0).wait(1).to({y:489.7},0).wait(1).to({y:478.3},0).wait(1).to({y:466.9},0).wait(1).to({y:455.6},0).wait(1).to({y:444.2},0).wait(1).to({y:432.8},0).wait(1).to({y:421.4},0).wait(1).to({y:410},0).wait(1).to({y:398.6},0).wait(1).to({y:387.2},0).wait(1).to({y:375.8},0).wait(1).to({y:364.5},0).wait(1).to({y:353.1},0).wait(1).to({y:341.7},0).wait(1).to({y:330.3},0).wait(1).to({y:318.9},0).wait(1).to({y:307.5},0).wait(1).to({y:296.1},0).wait(1).to({y:284.7},0).wait(71));
 
 	// picto cochon copy 3
 	this.instance_3 = new lib.cochonHenaff();
-	this.instance_3.setTransform(200,547,0.15,0.15,0,0,0,0,20);
+	this.instance_3.setTransform(300,547,0.15,0.15,0,0,0,0,20);
 	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(56).to({_off:false},0).wait(1).to({y:535.6},0).wait(1).to({y:524.3},0).wait(1).to({y:512.9},0).wait(1).to({y:501.5},0).wait(1).to({y:490.1},0).wait(1).to({y:478.8},0).wait(1).to({y:467.4},0).wait(1).to({y:456},0).wait(1).to({y:444.6},0).wait(1).to({y:433.3},0).wait(1).to({y:421.9},0).wait(1).to({y:410.5},0).wait(1).to({y:399.1},0).wait(1).to({y:387.8},0).wait(1).to({y:376.4},0).wait(1).to({y:365},0).wait(1).to({y:353.6},0).wait(1).to({y:342.3},0).wait(1).to({y:330.9},0).wait(1).to({y:319.5},0).wait(1).to({y:308.1},0).wait(1).to({y:296.8},0).wait(1).to({x:200.1,y:285.4},0).wait(71));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(56).to({_off:false},0).wait(1).to({y:535.6},0).wait(1).to({y:524.3},0).wait(1).to({y:512.9},0).wait(1).to({y:501.5},0).wait(1).to({y:490.1},0).wait(1).to({y:478.8},0).wait(1).to({y:467.4},0).wait(1).to({y:456},0).wait(1).to({y:444.6},0).wait(1).to({y:433.3},0).wait(1).to({y:421.9},0).wait(1).to({y:410.5},0).wait(1).to({y:399.1},0).wait(1).to({y:387.8},0).wait(1).to({y:376.4},0).wait(1).to({y:365},0).wait(1).to({y:353.6},0).wait(1).to({y:342.3},0).wait(1).to({y:330.9},0).wait(1).to({y:319.5},0).wait(1).to({y:308.1},0).wait(1).to({y:296.8},0).wait(1).to({x:300.1,y:285.4},0).wait(71));
 
 	// Calque 1 copy 2
 	this.herta = new lib.herta();
-	this.herta.setTransform(306.4,542.8,0.8,0.8,0,0,0,120.4,24.7);
+	this.herta.setTransform(406.4,542.8,0.8,0.8,0,0,0,120.4,24.7);
 	this.herta._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.herta).wait(31).to({_off:false},0).wait(1).to({regX:107.8,regY:32.6,x:296.3,y:535.9},0).wait(1).to({y:522.7},0).wait(1).to({y:509.4},0).wait(1).to({y:496.2},0).wait(1).to({y:483},0).wait(1).to({y:469.8},0).wait(1).to({y:456.5},0).wait(1).to({y:443.3},0).wait(1).to({y:430.1},0).wait(1).to({y:416.9},0).wait(1).to({y:403.7},0).wait(1).to({y:390.4},0).wait(1).to({y:377.2},0).wait(1).to({y:364},0).wait(1).to({y:350.8},0).wait(1).to({y:337.6},0).wait(1).to({y:324.3},0).wait(1).to({y:311.1},0).wait(1).to({y:297.9},0).wait(1).to({y:284.7},0).wait(1).to({y:271.4},0).wait(1).to({y:258.2},0).wait(1).to({y:245},0).wait(96));
+	this.timeline.addTween(cjs.Tween.get(this.herta).wait(31).to({_off:false},0).wait(1).to({regX:107.8,regY:32.6,x:396.3,y:535.9},0).wait(1).to({y:522.7},0).wait(1).to({y:509.4},0).wait(1).to({y:496.2},0).wait(1).to({y:483},0).wait(1).to({y:469.8},0).wait(1).to({y:456.5},0).wait(1).to({y:443.3},0).wait(1).to({y:430.1},0).wait(1).to({y:416.9},0).wait(1).to({y:403.7},0).wait(1).to({y:390.4},0).wait(1).to({y:377.2},0).wait(1).to({y:364},0).wait(1).to({y:350.8},0).wait(1).to({y:337.6},0).wait(1).to({y:324.3},0).wait(1).to({y:311.1},0).wait(1).to({y:297.9},0).wait(1).to({y:284.7},0).wait(1).to({y:271.4},0).wait(1).to({y:258.2},0).wait(1).to({y:245},0).wait(96));
 
 	// picto cochon copy 2
 	this.cochonHerta = new lib.cochonHerta();
-	this.cochonHerta.setTransform(200,547,0.15,0.15,0,0,0,0,20);
+	this.cochonHerta.setTransform(300,547,0.15,0.15,0,0,0,0,20);
 	this.cochonHerta._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.cochonHerta).wait(31).to({_off:false},0).wait(1).to({y:533.9},0).wait(1).to({y:520.7},0).wait(1).to({y:507.6},0).wait(1).to({y:494.5},0).wait(1).to({y:481.3},0).wait(1).to({y:468.2},0).wait(1).to({y:455.1},0).wait(1).to({y:442},0).wait(1).to({y:428.8},0).wait(1).to({y:415.7},0).wait(1).to({y:402.6},0).wait(1).to({y:389.4},0).wait(1).to({y:376.3},0).wait(1).to({y:363.2},0).wait(1).to({y:350},0).wait(1).to({y:336.9},0).wait(1).to({y:323.8},0).wait(1).to({y:310.7},0).wait(1).to({y:297.5},0).wait(1).to({y:284.4},0).wait(1).to({y:271.3},0).wait(1).to({y:258.1},0).wait(1).to({y:245},0).wait(96));
 
 	// Calque 1 copy
 	this.carrefour = new lib.carrefour();
-	this.carrefour.setTransform(76.4,541.2,0.8,0.8,0,0,0,120.4,24.7);
+	this.carrefour.setTransform(176.4,541.2,0.8,0.8,0,0,0,120.4,24.7);
 
-	this.timeline.addTween(cjs.Tween.get(this.carrefour).wait(1).to({regX:131.5,regY:32.5,x:85.3,y:534.5},0).wait(1).to({y:521.5},0).wait(1).to({y:508.6},0).wait(1).to({y:495.6},0).wait(1).to({y:482.7},0).wait(1).to({y:469.7},0).wait(1).to({y:456.8},0).wait(1).to({y:443.8},0).wait(1).to({y:430.9},0).wait(1).to({y:417.9},0).wait(1).to({y:405},0).wait(1).to({y:392},0).wait(1).to({y:379.1},0).wait(1).to({y:366.1},0).wait(1).to({y:353.2},0).wait(1).to({y:340.2},0).wait(1).to({y:327.3},0).wait(1).to({y:314.3},0).wait(1).to({y:301.4},0).wait(1).to({y:288.4},0).wait(1).to({y:275.5},0).wait(1).to({y:262.5},0).wait(1).to({y:249.6},0).wait(1).to({y:236.6},0).wait(1).to({y:223.7},0).wait(1).to({y:210.7},0).wait(1).to({y:197.8},0).wait(1).to({y:184.8},0).wait(1).to({y:171.9},0).wait(1).to({y:158.9},0).wait(120));
+	this.timeline.addTween(cjs.Tween.get(this.carrefour).wait(1).to({regX:131.5,regY:32.5,x:185.2,y:534.5},0).wait(1).to({y:521.5},0).wait(1).to({y:508.6},0).wait(1).to({y:495.6},0).wait(1).to({y:482.7},0).wait(1).to({y:469.7},0).wait(1).to({y:456.8},0).wait(1).to({y:443.8},0).wait(1).to({y:430.9},0).wait(1).to({y:417.9},0).wait(1).to({y:405},0).wait(1).to({y:392},0).wait(1).to({y:379.1},0).wait(1).to({y:366.1},0).wait(1).to({y:353.2},0).wait(1).to({y:340.2},0).wait(1).to({y:327.3},0).wait(1).to({y:314.3},0).wait(1).to({y:301.4},0).wait(1).to({y:288.4},0).wait(1).to({y:275.5},0).wait(1).to({y:262.5},0).wait(1).to({y:249.6},0).wait(1).to({y:236.6},0).wait(1).to({y:223.7},0).wait(1).to({y:210.7},0).wait(1).to({y:197.8},0).wait(1).to({y:184.8},0).wait(1).to({y:171.9},0).wait(1).to({y:158.9},0).wait(120));
 
 	// picto cochon copy
 	this.instance_4 = new lib.cochonCarrefour();
-	this.instance_4.setTransform(200,547,0.15,0.15,0,0,0,0,20);
+	this.instance_4.setTransform(300,547,0.15,0.15,0,0,0,0,20);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1).to({y:534.1},0).wait(1).to({y:521.2},0).wait(1).to({y:508.3},0).wait(1).to({y:495.4},0).wait(1).to({y:482.5},0).wait(1).to({y:469.6},0).wait(1).to({y:456.7},0).wait(1).to({y:443.8},0).wait(1).to({y:430.9},0).wait(1).to({y:418},0).wait(1).to({y:405.1},0).wait(1).to({y:392.2},0).wait(1).to({y:379.3},0).wait(1).to({y:366.4},0).wait(1).to({y:353.5},0).wait(1).to({y:340.6},0).wait(1).to({y:327.7},0).wait(1).to({y:314.8},0).wait(1).to({y:301.9},0).wait(1).to({y:289},0).wait(1).to({y:276.1},0).wait(1).to({y:263.2},0).wait(1).to({y:250.3},0).wait(1).to({y:237.4},0).wait(1).to({y:224.5},0).wait(1).to({y:211.6},0).wait(1).to({y:198.7},0).wait(1).to({y:185.8},0).wait(1).to({y:172.9},0).wait(1).to({y:160},0).wait(120));
 
 	// pictos
 	this.instance_5 = new lib.picto2();
-	this.instance_5.setTransform(200,52.8,1.31,1.31,0,0,0,27.9,15.2);
+	this.instance_5.setTransform(300,52.8,1.31,1.31,0,0,0,27.9,15.2);
 
 	this.instance_6 = new lib.picto1();
-	this.instance_6.setTransform(200,547.6,1,1,0,0,0,27.9,15.2);
+	this.instance_6.setTransform(300,547.6,1,1,0,0,0,27.9,15.2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5}]}).wait(150));
 
 	// jauge
 	this.shape = new cjs.Shape();
-	this.shape.graphics.lf(["rgba(255,255,255,0)","rgba(255,255,255,0.498)"],[0,0.055],0.2,432.4,0.2,-217.6).s().p("EgBZAh/MgAFhC3IBUhGIBkBGMAAFBC3g");
-	this.shape.setTransform(199.9,408,1,1,0,0,0,0,107.4);
+	this.shape.graphics.lf(["rgba(255,255,255,0)","rgba(255,255,255,0.498)"],[0,0.055],0.2,432.4,0.2,-217.6).s().p("EgBZAh/MgAGhC3IBVhGIBkBGMAAFBC3g");
+	this.shape.setTransform(299.9,408,1,1,0,0,0,0,107.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(150));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(230.1,288.3,256.6,557.4);
+p.nominalBounds = new cjs.Rectangle(380.1,288.3,256.6,557.4);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
 var lib, images, createjs, ss;
