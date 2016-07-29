@@ -32,17 +32,19 @@
     <script src="js/animation.js"></script>
     <script src="js/jquery.viewport.mini.js"></script>
     <script>
-      var canvas, stage, exportRoot;
-      function initAnimation() {
-        canvas = document.getElementById("canvas");
-        exportRoot = new lib.cochonv2();
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	exportRoot = new lib.cochonv3();
 
-        stage = new createjs.Stage(canvas);
-        stage.addChild(exportRoot);
-        stage.update();
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
 
-        createjs.Ticker.setFPS(lib.properties.fps);
-        createjs.Ticker.addEventListener("tick", stage);
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
       }
     </script>
     <script src="js/app.js"></script>
