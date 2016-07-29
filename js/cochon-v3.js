@@ -1759,6 +1759,17 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 			$('#revealAuchan').foundation('open');
 			// Fin de votre code personnalisé
 		}
+
+		this.monoprix_1.addEventListener("click", fl_MouseClickHandlerMonoprix_1.bind(this));
+		
+		function fl_MouseClickHandlerMonoprix_1()
+		{
+			// Début de votre code personnalisé
+			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealMonoprix').foundation('open');
+			// Fin de votre code personnalisé
+		}
 		
 		this.intermarche.addEventListener("click", fl_MouseClickHandlerIntermarche.bind(this));
 		
