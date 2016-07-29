@@ -54,44 +54,44 @@ p.nominalBounds = new cjs.Rectangle(0,0,372.3,202);
 	// Calque 1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#F0931D").s().p("AgnAoQgGgLAAgSIAAhEIAZAAIAABEQAAAMADAFQAEAKANAAQAOAAAFgKQACgFAAgMIAAhEIAZAAIAABEQAAASgGALQgKASgeABQgcgBgLgSg");
-	this.shape.setTransform(142.3,18.2);
+	this.shape.setTransform(160.9,18.2);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#F0931D").s().p("AgqA5IAAhxIBSAAIAAAUIg7AAIAAAYIA3AAIAAASIg3AAIAAAfIA+AAIAAAUg");
-	this.shape_1.setTransform(127.1,18.1);
+	this.shape_1.graphics.f("#F0931D").s().p("AgqA5IAAhxIBTAAIAAAUIg8AAIAAAYIA2AAIAAASIg2AAIAAAfIA+AAIAAAUg");
+	this.shape_1.setTransform(145.7,18.1);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#F0931D").s().p("AAhA5IAAhMIAAgKIAAgJIgWBfIgVAAIgWhfIAAAJIAAAKIAABMIgWAAIAAhxIAjAAIATBYIAUhYIAjAAIAABxg");
-	this.shape_2.setTransform(114.9,18.1);
+	this.shape_2.graphics.f("#F0931D").s().p("AAhA5IAAhMIAAgKIAAgJIgWBfIgWAAIgVhfIAAAJIAAAKIAABMIgWAAIAAhxIAjAAIATBYIAUhYIAjAAIAABxg");
+	this.shape_2.setTransform(133.5,18.1);
 
 	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#F0931D").s().p("AgqA5IAAhxIBSAAIAAAUIg7AAIAAAYIA3AAIAAASIg3AAIAAAfIA+AAIAAAUg");
-	this.shape_3.setTransform(103.1,18.1);
+	this.shape_3.graphics.f("#F0931D").s().p("AgqA5IAAhxIBTAAIAAAUIg8AAIAAAYIA2AAIAAASIg2AAIAAAfIA+AAIAAAUg");
+	this.shape_3.setTransform(121.7,18.1);
 
 	this.shape_4 = new cjs.Shape();
 	this.shape_4.graphics.f("#F0931D").s().p("AgLA5IAAhdIgiAAIAAgUIBbAAIAAAUIgiAAIAABdg");
-	this.shape_4.setTransform(92.6,18.1);
+	this.shape_4.setTransform(111.2,18.1);
 
 	this.shape_5 = new cjs.Shape();
 	this.shape_5.graphics.f("#F0931D").s().p("AghAyQgNgKAAgSIAXAAQABAIADAEQAGAHANAAQAIAAAGgCQAKgEAAgKQAAgFgFgDQgFgDgLgDIgKgDQgTgEgHgEQgLgGAAgRQAAgQALgKQAMgKAVAAQARAAANAJQANAKABASIgYAAQAAgKgJgEQgGgDgGAAQgKAAgFADQgGAEAAAHQAAAGAGADQADACAMADIASAFQANADAHADQAKAIAAAQQAAAPgMALQgMAKgWAAQgVAAgNgKg");
-	this.shape_5.setTransform(82.5,18);
+	this.shape_5.setTransform(101.1,18);
 
 	this.shape_6 = new cjs.Shape();
 	this.shape_6.graphics.f("#F0931D").s().p("AgKA5IAAgrIgohGIAdAAIAWAyIAXgyIAbAAIgnBGIAAArg");
-	this.shape_6.setTransform(71.8,18.1);
+	this.shape_6.setTransform(90.4,18.1);
 
 	this.shape_7 = new cjs.Shape();
 	this.shape_7.graphics.f("#F0931D").s().p("AghAyQgNgKAAgSIAXAAQABAIADAEQAGAHANAAQAIAAAGgCQAKgEAAgKQAAgFgFgDQgFgDgLgDIgKgDQgTgEgHgEQgLgGAAgRQAAgQALgKQAMgKAVAAQARAAANAJQANAKABASIgYAAQAAgKgJgEQgGgDgGAAQgKAAgFADQgGAEAAAHQAAAGAGADQADACAMADIASAFQANADAHADQAKAIAAAQQAAAPgMALQgMAKgWAAQgVAAgNgKg");
-	this.shape_7.setTransform(61.2,18);
+	this.shape_7.setTransform(79.8,18);
 
 	this.shape_8 = new cjs.Shape();
-	this.shape_8.graphics.f("#FFFFFF").s().p("ArDC5IAAlwILHgBIHiABIDdC2IjdC6g");
+	this.shape_8.graphics.f("#FFFFFF").s().p("AnkC4Ijfi2IDfi6ISnAAIAAFwIrHABg");
 	this.shape_8.setTransform(108.6,18.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-18.6,0,241,37.1);
+p.nominalBounds = new cjs.Rectangle(0,0,241,37.1);
 
 
 (lib.picto2 = function(mode,startPosition,loop) {
@@ -1695,7 +1695,7 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 
 
 
-(lib.cochonv3 = function(mode,startPosition,loop) {
+(lib.cochonv2 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
@@ -1708,13 +1708,14 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		Le code s’exécute lorsque vous cliquez sur l’occurrence de symbole.
 		*/
 		
-		this.carrefour.addEventListener("click", fl_MouseClickHandler.bind(this));
+		this.carrefour.addEventListener("click", fl_MouseClickHandlerCarrefour.bind(this));
 		
-		function fl_MouseClickHandler()
+		function fl_MouseClickHandlerCarrefour()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealCarrefour').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
@@ -1726,113 +1727,135 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		Le code s’exécute lorsque vous cliquez sur l’occurrence de symbole.
 		*/
 		
-		this.herta.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.herta.addEventListener("click", fl_MouseClickHandlerHerta.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerHerta()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealHerta').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.henaff.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.henaff.addEventListener("click", fl_MouseClickHandlerHenaff.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerHenaff()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealHenaff').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.monoprix.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.monoprix.addEventListener("click", fl_MouseClickHandlerMonoprix.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerMonoprix()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealAuchan').foundation('open');
+			// Fin de votre code personnalisé
+		}
+
+		this.monoprix_1.addEventListener("click", fl_MouseClickHandlerMonoprix_1.bind(this));
+		
+		function fl_MouseClickHandlerMonoprix_1()
+		{
+			// Début de votre code personnalisé
+			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealMonoprix').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.intermarche.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.intermarche.addEventListener("click", fl_MouseClickHandlerIntermarche.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerIntermarche()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealIntermarche').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.fleurymichon.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.fleurymichon.addEventListener("click", fl_MouseClickHandlerFleuryMichon.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerFleuryMichon()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealFleuryMichon').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.cora.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.cora.addEventListener("click", fl_MouseClickHandlerCora.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerCora()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealCora').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.lidl.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.lidl.addEventListener("click", fl_MouseClickHandlerLidl.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerLidl()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealLidl').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.leclerc.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.leclerc.addEventListener("click", fl_MouseClickHandlerLeclerc.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerLeclerc()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealLeclerc').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.systemeU.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.systemeU.addEventListener("click", fl_MouseClickHandlerSystemeU.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerSystemeU()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealSystemeU').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.casino.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.casino.addEventListener("click", fl_MouseClickHandlerCasino.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerCasino()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealCasino').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.bordeauChesnel.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.bordeauChesnel.addEventListener("click", fl_MouseClickHandlerBordeauChesnel.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerBordeauChesnel()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealBordeauChesnel').foundation('open');
 			// Fin de votre code personnalisé
 		}
 	}
@@ -1842,6 +1865,13 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).wait(30).call(this.frame_30).wait(119).call(this.frame_149).wait(1));
+
+	// Calque 1 copy 10
+	this.systemeU = new lib.systemeU();
+	this.systemeU.setTransform(535.3,551.8,0.8,0.8,0,0,0,120.4,24.7);
+	this.systemeU._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.systemeU).wait(149).to({_off:false},0).wait(1));
 
 	// Calque 1 copy 8
 	this.leclerc = new lib.leclerc();
@@ -1919,13 +1949,6 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(80).to({_off:false},0).wait(1).to({y:539.9},0).wait(1).to({y:532.7},0).wait(1).to({y:525.6},0).wait(1).to({y:518.4},0).wait(1).to({y:511.3},0).wait(1).to({y:504.1},0).wait(1).to({y:497},0).wait(1).to({y:489.8},0).wait(1).to({y:482.7},0).wait(1).to({y:475.5},0).wait(1).to({y:468.4},0).wait(1).to({y:461.2},0).wait(1).to({y:454.1},0).wait(1).to({y:446.9},0).wait(1).to({y:439.8},0).wait(1).to({y:432.7},0).wait(1).to({y:425.5},0).wait(1).to({y:418.4},0).wait(1).to({y:411.2},0).wait(1).to({y:404.1},0).wait(1).to({y:396.9},0).wait(1).to({y:389.8},0).wait(1).to({y:382.6},0).wait(1).to({y:375.5},0).wait(1).to({y:368.3},0).wait(1).to({y:361.2},0).wait(1).to({y:354},0).wait(1).to({y:346.9},0).wait(1).to({y:339.7},0).wait(1).to({y:332.6},0).wait(40));
-
-	// Calque 1 copy 10
-	this.systemeU = new lib.systemeU();
-	this.systemeU.setTransform(96.3,551.6,0.8,0.8,0,0,0,120.4,24.7);
-	this.systemeU._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.systemeU).wait(56).to({_off:false},0).wait(1).to({regX:108.6,regY:18.5,x:87,y:535.3},0).wait(1).to({x:87.1,y:523.9},0).wait(1).to({x:87.2,y:512.5},0).wait(1).to({x:87.3,y:501.1},0).wait(1).to({x:87.4,y:489.7},0).wait(1).to({x:87.5,y:478.3},0).wait(1).to({x:87.6,y:466.9},0).wait(1).to({x:87.7,y:455.6},0).wait(1).to({x:87.8,y:444.2},0).wait(1).to({x:87.9,y:432.8},0).wait(1).to({x:88,y:421.4},0).wait(1).to({x:88.1,y:410},0).wait(1).to({x:88.2,y:398.6},0).wait(1).to({x:88.3,y:387.2},0).wait(1).to({x:88.4,y:375.8},0).wait(1).to({x:88.5,y:364.5},0).wait(1).to({x:88.6,y:353.1},0).wait(1).to({x:88.7,y:341.7},0).wait(1).to({x:88.8,y:330.3},0).wait(1).to({x:88.9,y:318.9},0).wait(1).to({x:89,y:307.5},0).wait(1).to({x:89.1,y:296.1},0).wait(1).to({y:284.7},0).wait(71));
 
 	// Calque 1 copy 11
 	this.bordeauChesnel = new lib.bordeauChesnel();
