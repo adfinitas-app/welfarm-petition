@@ -1793,6 +1793,8 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 			// Fin de votre code personnalisé
 		}
 		
+		this.cora.addEventListener("click", fl_MouseClickHandlerCora.bind(this));
+		
 		function fl_MouseClickHandlerCora()
 		{
 			// Début de votre code personnalisé
