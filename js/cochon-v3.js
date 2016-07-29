@@ -1727,113 +1727,122 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		Le code s’exécute lorsque vous cliquez sur l’occurrence de symbole.
 		*/
 		
-		this.herta.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.herta.addEventListener("click", fl_MouseClickHandlerHerta.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerHerta()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealHerta').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.henaff.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.henaff.addEventListener("click", fl_MouseClickHandlerHenaff.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerHenaff()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealHenaff').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.monoprix.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.monoprix.addEventListener("click", fl_MouseClickHandlerMonoprix.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerMonoprix()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealAuchan').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.intermarche.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.intermarche.addEventListener("click", fl_MouseClickHandlerIntermarche.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerIntermarche()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealIntermarche').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.fleurymichon.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.fleurymichon.addEventListener("click", fl_MouseClickHandlerFleuryMichon.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerFleuryMichon()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealFleuryMichon').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.cora.addEventListener("click", fl_MouseClickHandler_2.bind(this));
-		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerCora()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealCora').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.lidl.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.lidl.addEventListener("click", fl_MouseClickHandlerLidl.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerLidl()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealLidl').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.leclerc.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.leclerc.addEventListener("click", fl_MouseClickHandlerLeclerc.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerLeclerc()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealLeclerc').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.systemeU.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.systemeU.addEventListener("click", fl_MouseClickHandlerSystemeU.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerSystemeU()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealSystemeU').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.casino.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.casino.addEventListener("click", fl_MouseClickHandlerCasino.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerCasino()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealCasino').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
-		this.bordeauChesnel.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		this.bordeauChesnel.addEventListener("click", fl_MouseClickHandlerBordeauChesnel.bind(this));
 		
-		function fl_MouseClickHandler_2()
+		function fl_MouseClickHandlerBordeauChesnel()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealBordeauChesnel').foundation('open');
 			// Fin de votre code personnalisé
 		}
 	}
