@@ -1708,13 +1708,14 @@ p.nominalBounds = new cjs.Rectangle(-186.1,-81,372.3,202);
 		Le code s’exécute lorsque vous cliquez sur l’occurrence de symbole.
 		*/
 		
-		this.carrefour.addEventListener("click", fl_MouseClickHandler.bind(this));
+		this.carrefour.addEventListener("click", fl_MouseClickHandlerCarrefour.bind(this));
 		
-		function fl_MouseClickHandler()
+		function fl_MouseClickHandlerCarrefour()
 		{
 			// Début de votre code personnalisé
 			// Ce code d’exemple affiche les mots "L’utilisateur a cliqué sur la souris" dans le panneau de sortie.
-			alert("L’utilisateur a cliqué sur la souris");
+			//alert("L’utilisateur a cliqué sur la souris");
+			$('#revealCarrefour').foundation('open');
 			// Fin de votre code personnalisé
 		}
 		
