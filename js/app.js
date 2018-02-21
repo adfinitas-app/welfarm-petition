@@ -238,7 +238,7 @@ $(document).ready(function() {
   });
 
   fbGlobal.child("counter").once("value", function(snapshot) {
-    $("#nb-signatures").html(snapshot.val() + toBeAdded);
+    $("#nb-signatures").html(snapshot.val() + toBeAdded + 9999);
     Firebase.goOffline();
   });
   $(window).on("scroll", launchAnimation);
